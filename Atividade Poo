@@ -1,0 +1,855 @@
+Atividade 1
+Class 
+internal class Retangulo
+    {
+        private int b;
+        private int a;
+        private int area;
+
+        public void setbase(int x)
+        {
+            b = x;
+        }
+
+        public void setaltura(int x)
+        {
+            a = x;
+        }
+        
+        public int getbase()
+        {
+            return b;
+        }
+
+        public int getaltura()
+        {
+            return a;
+        }
+
+        public int getarea()
+        {
+            return area;
+        }
+
+        public void calculararea()
+        {
+            area = b * a;
+        }
+    }
+}
+
+Program 
+static void Main(string[] args)
+        {
+            Retangulo ret;
+            ret = new Retangulo();
+            Console.Write("Digite o valor da base: ");
+            ret.setbase(int.Parse(Console.ReadLine()));
+            Console.Write("Digite o valor da altura: ");
+            ret.setaltura(int.Parse(Console.ReadLine()));
+            ret.calculararea();
+            Console.WriteLine("O retangulo que tem base {0} e altura {1} tem area {2}", ret.getbase(), ret.getaltura(), ret.getarea());
+        }
+    }
+}
+
+
+Atividade 2 
+Class:
+namespace Atividade_2_EX_1
+{
+    internal class Area_do_quadrado
+    {
+        private double l;
+        private double area;
+
+        public void setlado(double x)
+        {
+            l = x; 
+        }
+
+        public void setarea(double x)
+        {
+            area = x;
+        }
+
+        public double getlado()
+        {
+            return l;
+        }
+
+
+        public double getarea()
+        {
+            return area;
+        }
+
+        public void calculo()
+        {
+            area = l*l;
+        }
+    }
+
+}
+
+Promg: 
+namespace Atividade_2_EX_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Area_do_quadrado quad;
+            quad = new Area_do_quadrado();
+            Console.WriteLine("Digite o lado do quadrado");
+            quad.setlado(double.Parse(Console.ReadLine()));
+            quad.calculo();
+            Console.WriteLine(" A area do qudrado de lado {0} é igual a {1}", quad.getlado(),quad.getarea());
+        }
+    }
+}
+
+Atividade 3
+Class:
+namespace Diagonal_3
+{
+    internal class Diagonal
+    {
+        private double d;
+        private double area;
+
+        public void setdiagonal(double x)
+        {
+            d = x;
+        }
+        public void setarea(double x)
+        {
+            area = x;
+        }
+
+        public double getdiagonal()
+        {
+            return d;
+        }
+        public double getarea()
+        {
+            return area;
+        }
+
+        public void calculararea()
+        {
+            area = (d * d) / 2;
+        }
+    }
+}
+
+Program:
+
+namespace Diagonal_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Diagonal dig;
+            dig = new Diagonal();
+            Console.Write("Digite o valor da diagonal");
+            dig.setdiagonal(double.Parse(Console.ReadLine()));
+            dig.calculararea();
+            Console.WriteLine();
+            Console.WriteLine("A area do quadrado de lado {0} é {1}", dig.getdiagonal(), dig.getarea());
+        }
+    }
+}
+
+
+Atividade 4
+Class: 
+namespace Atividade_4
+{
+    internal class Triangulo
+    {
+        private double a;
+        private double b;
+        private double area;
+
+        public void setaltura(double x) 
+        {
+            a = x;
+        }
+        public void setbase(double x)
+        {
+            b = x;
+        }
+
+        public double getaltura()
+        {
+            return a;
+        }
+        public double getbase()
+        {
+            return b;
+        }
+        public double getarea()
+        {
+            return area;
+        }
+
+        public void calculararea()
+        {
+            area = (a * b) / 2;
+        }
+            
+    }
+}
+
+Program:
+namespace Atividade_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Triangulo tri;
+            tri = new Triangulo();
+            Console.WriteLine("Digite a altura: ");
+            tri.setaltura(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a base: ");
+            tri.setbase(double.Parse(Console.ReadLine()));
+            tri.calculararea();
+            Console.WriteLine("O triangulo de altura {0} e base {1} tem area igual {2}", tri.getaltura(), tri.getbase(), tri.getarea());
+
+        }
+    }
+}
+
+Atividade 6: 
+Class:
+
+namespace Atividade_6_Ex_1
+{
+    internal class Milha
+    {
+        private double milha;
+        private double metro;
+        
+
+        public void setmilha(double x)
+        {
+            milha = x;
+        }
+        public void setmetro(double x)
+        {
+            metro = x;
+        }
+       
+        public double getmilha()
+        {
+            return milha;
+        }
+       public double getmetro()
+       {
+            return metro;
+       }
+        public void conversao()
+        {
+            metro = milha * 1852;
+        }
+    }
+}
+
+Program:
+
+namespace Atividade_6_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Milha mil;
+            mil = new Milha();
+            Console.WriteLine("Digite a distancia em milhas");
+            mil.setmilha(double.Parse(Console.ReadLine()));
+            mil.conversao();
+            Console.WriteLine("Milhas {0} Metros {1} ", mil.getmilha(), mil.getmetro());
+        }
+    }
+}
+
+
+Atividade 7 
+Class :
+namespace Atividade_7_Poo
+{
+    internal class Coatçao
+    {
+        private double cotaçao;
+        private double d;
+        private double r;
+
+     public void setcotaçao(double x)
+        {
+            cotaçao = x;
+        }
+
+        public void setd(double x) 
+        {
+            d = x;
+        }
+
+        public double getcotaçao()
+        {
+            return cotaçao;
+        }
+
+        public double getdolar()
+        {
+            return d;
+        }
+
+        public double getreais()
+        {
+            return r;
+        }
+        public void realizarconverçao()
+        {
+            r = cotaçao * d;
+        }
+
+    }
+
+   
+}
+
+Program 
+
+namespace Atividade_7_Poo
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Coatçao cot;
+            cot = new Coatçao();
+            Console.WriteLine("Digite a cotação: ");
+            cot.setcotaçao(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o valor em dolares: ");
+            cot.setd(double.Parse(Console.ReadLine()));
+            cot.realizarconverçao();
+            Console.WriteLine("cotação {0} valor em dolares {1} valor em reais {2}",cot.getcotaçao(),cot.getdolar(),cot.getreais());
+
+        }
+    }
+}
+
+Atividade 8:
+Class:
+
+namespace Atividade_8_Ex_1
+{
+    internal class Maior
+    {
+        private double a;
+        private double b;
+        private double c;
+
+        public void setnumero1(double x)
+        {
+            a = x;
+        }
+        public void setnumero2(double x)
+        {
+            b = x;
+        }
+
+        public double getnumero1()
+        {
+            return a;
+        }
+        public double getnumero2()
+        {
+            return b;
+        }
+        public double getresultado()
+        {
+            return c;
+        }
+
+        public void forca()
+        {
+            if (a>b)
+            {
+                c = a;
+            }
+            else
+            {
+                c = b;
+            }
+
+        }
+    }
+}
+
+Program: 
+
+namespace Atividade_8_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Maior mai;
+            mai = new Maior();
+            Console.WriteLine("Digite o primeiro número");
+            mai.setnumero1(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o segundo número");
+            mai.setnumero2(double.Parse(Console.ReadLine()));
+            mai.forca();
+            Console.WriteLine("O maior número é {0}", mai.getresultado());
+
+            
+            
+        }
+    }
+}
+
+
+Atividade 9:
+Class:
+
+namespace Atividade_9_Ex_1
+{
+    internal class Ativ9
+    {
+        private double a;
+        private double b;
+        private double c;
+        
+        public void setnumero1(double x)
+        {
+            a = x;
+        }
+        public void setnumero2(double x)
+        {
+            b = x;
+        }
+        
+        public double getnumero1()
+        {
+            return a;
+        }
+        public double getnumero2()
+        {
+            return b;
+        }
+        public double getnumero3()
+        {
+            return c;
+        }
+       
+        
+        public void troia()
+        {
+            if (a > b)
+            {
+                c = a;
+            }
+            else
+            {
+                if (b > a)
+                {
+                    c = b;
+                }
+                else
+                {
+                    Console.WriteLine("Ambos os números são identicos");
+                }
+            }
+            
+        }
+    }
+}
+
+
+Program:
+
+namespace Atividade_9_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Ativ9 num;
+            num = new Ativ9();
+            Console.WriteLine("Digite o primeiro número");
+            num.setnumero1(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o segundo número");
+            num.setnumero2(double.Parse(Console.ReadLine()));
+            num.troia();
+            Console.WriteLine("Resultado: {0}", num.getnumero3());
+        }
+    }
+}
+
+
+Atividade 10: 
+
+Class:
+
+namespace Atividade_10_Ex_1
+{
+    internal class Terreno
+    {
+        private double a;
+        private double b;
+        private double t;
+
+        public void setaltura(double x)
+        {
+            a = x;
+        }
+        public void setbase(double x)
+        {
+            b = x;
+        }
+
+        public double getaltura()
+        {
+            return a;
+        }
+        public double getbase()
+        {
+            return b;
+        }
+        public double getterreno()
+        {
+            return t;
+        }
+
+        public void socrro()
+        {
+            t = a * b;
+          
+            if (t < 100)
+            {
+                Console.WriteLine("O terreno é pequeno");
+            }
+            else
+            {
+                Console.WriteLine("O terreno é grande");
+            }
+        }
+
+    }
+}
+
+
+Program: 
+
+namespace Atividade_10_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Terreno ter;
+            ter = new Terreno();
+            Console.WriteLine("Digite altura: ");
+            ter.setaltura(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite base: ");
+            ter.setbase(double.Parse(Console.ReadLine()));
+            ter.socrro();
+            Console.WriteLine("{0}", ter.getterreno());
+            
+        }
+    }
+}
+
+
+Atividade 11
+
+Class:
+
+namespace Atividade_11_Ex_1
+{
+    internal class Indice
+    {
+        private double a;
+        private double p;
+        private double r;
+
+        public void setaltura(double x)
+        {
+            a = x;
+        }
+        public void setpeso(double x)
+        {
+            p = x;
+        }
+
+        private double getaltura()
+        {
+            return a;
+        }
+        private double getpeso()
+        {
+            return p;
+        }
+        public double getresultado()
+        {
+            return r;
+        }
+
+        public void interno()
+        {
+            r = p / a;
+
+            if (r < 20)
+            {
+                Console.WriteLine("Abaixo do peso");
+            }
+            else
+            {
+                if(20<=r && r<25)
+                {
+                    Console.WriteLine("Peso ideal");
+                }
+                else
+                {
+                    if (r > 25)
+                    {
+                        Console.WriteLine("Você está acima do peso");
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+Program: 
+
+namespace Atividade_11_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Indice imc;
+            imc = new Indice();
+            Console.WriteLine("Digite a sua altura");
+            imc.setaltura(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite se peso");
+            imc.setpeso(double.Parse(Console.ReadLine()));
+            imc.interno();
+            Console.WriteLine("{0}", imc.getresultado());
+        }
+    }
+}
+
+Atividade 12: 
+
+Class: 
+namespace Classificador_de_triangulos
+{
+    internal class Triang
+    {
+        private double a;
+        private double b;
+        private double c;
+        private double tri;
+
+        public void setladoa(double x)
+        {
+            a = x;
+        }
+        public void setladob(double x)
+        {
+            b = x;
+        }
+        public void setladoc(double x)
+        {
+            c = x;
+        }
+
+        public double getladoa()
+        {
+            return a;
+        }
+        public double getladob()
+        {
+            return b;
+        }
+        public double getladoc()
+        {
+            return c;
+        }
+        public double gettriangulo()
+        {
+            return tri;
+        }
+
+        public void triangulo()
+        {
+            tri = a + b + c;
+
+            if(a != b && b!=c)
+            {
+                Console.WriteLine("O triangulo é Escaleno");
+            }
+            else
+            {
+                if (a != c || b!=c)
+                {
+                    Console.WriteLine("O triangulo é Isoceles");
+                }
+                else
+                {
+                    Console.WriteLine("O triangulo é equilatero");
+                }
+                
+            }
+            
+                
+           
+            
+
+            
+        }
+
+       
+    }
+}
+
+Program:
+
+namespace Classificador_de_triangulos
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Triang atv;
+            atv = new Triang();
+            Console.WriteLine("Digite o lado a");
+            atv.setladoa(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a lado b");
+            atv.setladob(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o lado c");
+            atv.setladoc(double.Parse(Console.ReadLine()));
+            atv.triangulo();
+            Console.WriteLine("{0}", atv.gettriangulo());
+        } 
+    }
+}
+
+Atividade 13:
+
+Class:
+
+namespace Atividade_13_Ex_1
+{
+    internal class Trianguloret
+    {
+        private double A;
+        private double B;
+        private double C;
+        private double Tri;
+        private double Tri1;
+        private double Tri2;
+
+        public void setladoA(double x)
+        {
+            A = x;
+        }
+        public void setladoB(double x)
+        {
+            B = x;
+        }
+        public void setladoC(double x)
+        {
+            C = x;
+        }
+
+        public double getladoA()
+        {
+            return A;
+        }
+        public double getladoB()
+        {
+            return B;
+        }
+        public double getladoC()
+        {
+            return C;
+        }
+        public double getTri()
+        {
+            return Tri;
+        }
+        public double getTri1()
+        {
+            return Tri1;
+        }
+        public double getTri2()
+        {
+            return Tri2;
+
+        }
+
+        public void triangulo()
+        {
+            Tri = (A * A) + (B * B);
+            Tri1 = (A*A) + (C * C);
+            Tri2 = (B * B) + (C * C);
+
+            if(Tri == (C * C))
+            {
+                Console.WriteLine("O triangulo é um triangulo retangulo");
+            }
+            else
+            {
+                if(Tri1== (B * B))
+                {
+                    Console.WriteLine("O triangulo e retangulo");
+                }
+                else
+                {
+                    if(Tri2 == (A * A))
+                    {
+                        Console.WriteLine("O triangulo e retangulo");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O triangulo não é um triangulo retangulo");
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+Program:
+
+namespace Atividade_13_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Trianguloret trr;
+            trr = new Trianguloret();
+            Console.WriteLine("Digite lado A");
+            trr.setladoA(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite lado B");
+            trr.setladoB(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite lado C");
+            trr.setladoC(double.Parse(Console.ReadLine()));
+            trr.getTri();
+            trr.getTri1();
+            trr.getTri2();
+            Console.WriteLine("{0}", trr.gettriangulo());
+        }
+    }
+}
