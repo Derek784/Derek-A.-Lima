@@ -1,0 +1,929 @@
+Atividade 2 
+Exercício 1:
+
+Class: 
+
+internal class Retangulo
+    {
+        private int A;
+        private int B;
+        private int Resultado;
+
+        public Retangulo()
+        {
+            this.A = 0;
+            this.B = 0;
+            this.Resultado = 0;
+        }
+
+        public Retangulo(int A, int B, int Resultado)
+        {
+            this.A = A;
+            this.B = B;
+            this.Resultado = Resultado;
+        }
+
+        public void setA(int A)
+        {
+            this.A = A;
+        }
+        public void setB(int B)
+        {
+            this.B = B;
+        }
+
+        
+        public int getA()
+        {
+            return this.A;
+        }
+        public int getB()
+        {
+            return this.B;
+        }
+        
+
+        public int getResultado()
+        {
+            return this.Resultado;
+        }
+        public void calcularArea()
+        {
+            this.Resultado = (this.A * this.B);
+
+        }
+    }
+}
+
+Program: 
+
+internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Retangulo ret;
+            ret = new Retangulo();
+
+            Console.Write("Digite o valor do lado A: ");
+            ret.setA(int.Parse(Console.ReadLine()));
+
+            Console.Write("Digite o valor do lado B: ");
+            ret.setB(int.Parse(Console.ReadLine()));
+
+            ret.calcularArea();
+
+            Console.WriteLine("A area do retangulo corresponde a {0}", ret.getResultado());
+
+
+        }
+    }
+}
+
+
+Exercício 2:
+
+Class: 
+
+namespace Exercicio_2_atividade_2
+{
+    internal class Quadrado
+    {
+        private double A;
+        private double Resultado;
+        
+        public Quadrado()
+        {
+            this.A = 0;
+            this.Resultado = 0;
+        }
+
+        public Quadrado(double A, double Resultado)
+        {
+            this.A = A;
+            this.Resultado = Resultado;
+        }
+          
+        public void setA(double A)
+        {
+             this.A=A;
+        }
+        public void setResultado(double Resultado)
+        {
+            this.Resultado = Resultado;
+        }
+        public double getA()
+        {
+            return this.A;
+        }
+        public double getResultado()
+        {
+            return this.Resultado;
+        }
+
+        public void Result()
+        {
+            this.Resultado = (this.A * this.A);
+        }
+        
+    }
+}
+
+
+Program: 
+
+namespace Exercicio_2_atividade_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Quadrado quad = new Quadrado();
+            Console.WriteLine("Digite a medida da aresta");
+            quad.setA(double.Parse(Console.ReadLine()));
+            quad.Result();
+
+            Console.WriteLine("Area do quadrado de aresta {0} e igual a {1}", quad.getA(), quad.getResultado());
+
+        }
+    }
+}
+
+
+Exercício 3:
+
+Class: 
+
+namespace Exercicio_2_atividade_3
+{
+    internal class Quadrado
+    {
+        private double D;
+        private double R;
+
+        public Quadrado()
+        {
+            this.D=0;
+            this.R = 0;
+        }
+
+        public Quadrado(double D, double R)
+        {
+            this.D = D;
+            this.R = R;
+        }
+
+        public void setD(double D)
+        {
+            this.D = D;
+        }
+        public void setR(double R)
+        {
+            this.R = R;
+        }
+       
+
+        public double getD()
+        {
+            return this.D;
+        }
+        public double getR()
+        {
+            return this.R;
+        }
+       
+        
+        public void Resultado()
+        {
+            this.R = (this.D * this.D) / 2;
+        }
+        
+
+    }
+}
+
+
+Program:
+
+namespace Exercicio_2_atividade_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Quadrado quad = new Quadrado();
+            Console.WriteLine("Digite uma diagonal");
+            quad.setD(double.Parse(Console.ReadLine()));
+            quad.Resultado();
+            Console.WriteLine("A area do quadrado de diagonal {0} é igual a {1}", quad.getD(), quad.getR());
+        }
+    }
+}
+Exercício 4:
+
+Class:
+
+namespace Exercicio2_Atividade_4
+{
+    internal class Projeto
+    {
+        private double A;
+        private double B;
+        private double T;
+
+        public Projeto()
+        {
+            this.A = 0;
+            this.B = 0;
+            this.T = 0;
+        }
+
+        public Projeto(double A, double B, double T)
+        {
+            this.A = A;
+            this.B = B;
+            this.T = T;
+        }
+
+        public void setA(double A)
+        {
+            this.A = A;
+        }
+        public void setB(double B)
+        {
+            this.B = B;
+        }
+        public void setT(double T)
+        {
+            this.T = T;
+        }
+
+        public double getA()
+        {
+            return this.A;
+        }
+        public double getB()
+        {
+            return this.B;
+        }
+        public double getT()
+        {
+            return this.T;
+        }
+
+        public void Resultado()
+        {
+            this.T = (this.A * this.B) / 2;
+        }
+    }
+
+    
+}
+Program:
+
+namespace Exercicio2_Atividade_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto tri = new Projeto();
+            Console.WriteLine("Digite a Altura");
+            tri.setA(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a Base");
+            tri.setB(double.Parse(Console.ReadLine()));
+
+            tri.Resultado();
+
+            Console.WriteLine("A area do triangulo de altura {0} e base {1} é igual a {2}", tri.getA(), tri.getB(), tri.getT());
+        }
+    }
+}
+
+
+Exercício 5:
+
+Class:
+namespace Exercicio2_Atividade5
+{
+    internal class Projeto
+    {
+        private double M;
+        private double K;
+
+        public Projeto()
+        {
+            this.M = 0;
+            this.K = 0;
+        }
+        public Projeto(double M, double K)
+        {
+            this.M = M;
+            this.K = K;
+        }
+
+        public void setM(double M)
+        {
+            this.M = M;
+        }
+        public void setK(double K)
+        {
+            this.K = K;
+        }
+
+        public double getM()
+        {
+            return this.M;
+        }
+        public double getK()
+        {
+            return this.K;
+        }
+
+        public void Kilo()
+        {
+            this.K = this.M * 1.852;
+        }
+    }
+}
+
+
+Program:
+
+namespace Exercicio2_Atividade5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto kilo = new Projeto();
+            Console.WriteLine("Digite a distancia em milhas");
+            kilo.setM(double.Parse(Console.ReadLine()));
+            kilo.Kilo();
+
+            Console.WriteLine("O resultado em kilometros é igual a {0}", kilo.getK());
+        }
+    }
+}
+
+Exercício 6:
+
+Class:
+
+namespace Exercio_2_Atividade_6
+{
+    internal class Projeto
+    {
+        private double D;
+        private double R;
+        private double C;
+
+        public Projeto()
+        {
+            this.D = 0;
+            this.R = 0;
+            this.C = 0;
+        }
+        public Projeto(double D, double R)
+        {
+            this.D = D;
+            this.R = R;
+            this.C = 0;
+        }
+
+        public void setD(double D)
+        {
+            this.D = D;
+        }
+        public void setR(double R)
+        {
+            this.R = R;
+        }
+        public void setC(double C)
+        {
+            this.C = C;
+        }
+
+        public double getD()
+        {
+            return this.D;
+        }
+        public double getR()
+        {
+            return this.R;
+        }
+        public double getC()
+        {
+            return this.C;
+        }
+
+        public void Reais()
+        {
+            this.R = this.D / this.C;
+
+
+        }
+    }
+}
+
+Program: 
+
+namespace Exercio_2_Atividade_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto dol = new Projeto();
+            Console.WriteLine("Digite a quantidade em dolares");
+            dol.setD(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a cotação");
+            dol.setC(double.Parse(Console.ReadLine()));
+            dol.Reais();
+
+            Console.WriteLine("O valor da quantidade de dolares em reais e {0} ", dol.getR());
+        }
+    }
+}
+
+Exercício 7:
+
+Class:
+
+namespace exercicio_2_Atividade_7
+{
+    internal class Projeto
+    {
+        private double A;
+        private double B;
+        private double C;
+        
+        public Projeto()
+        {
+            this.A = 0;
+            this.B = 0;
+            this.C = 0;
+        }
+        public Projeto(double A, double B, double C)
+        {
+            this.A = A;
+            this.B = B;
+            this.C = C;
+        }
+
+        public void setA(double A)
+        {
+            this.A = A;
+        }
+        public void setB(double B)
+        {
+            this.B = B;
+        }
+        public void setC(double C)
+        {
+            this.C = C;
+        }
+
+        public double getA()
+        {
+            return this.A;
+        }
+        public double getB()
+        {
+            return this.B;
+        }
+        public double getC()
+        {
+            return this.C;
+        }
+
+        public void Resultado()
+        {
+
+            if (this.A > this.B)
+            {
+                this.C = this.A;
+            }
+            else
+            {
+                this.C = this.B;
+            }
+            
+           
+        } 
+    }
+}
+
+
+Program:
+
+namespace exercicio_2_Atividade_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto maior = new Projeto();
+            Console.WriteLine("Digite o primeiro numero");
+            maior.setA(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o segundo numero");
+            maior.setB(double.Parse(Console.ReadLine()));
+            maior.Resultado();
+
+            Console.WriteLine("O maior dos dois numeros e {0}", maior.getC());
+        }
+    }
+}
+
+
+Exercício 8:
+
+Class:
+
+namespace exercicio_2_Atividade_7
+{
+    internal class Projeto
+    {
+        private double A;
+        private double B;
+        private double C;
+        
+        public Projeto()
+        {
+            this.A = 0;
+            this.B = 0;
+            this.C = 0;
+        }
+        public Projeto(double A, double B, double C)
+        {
+            this.A = A;
+            this.B = B;
+            this.C = C;
+        }
+
+        public void setA(double A)
+        {
+            this.A = A;
+        }
+        public void setB(double B)
+        {
+            this.B = B;
+        }
+        public void setC(double C)
+        {
+            this.C = C;
+        }
+
+        public double getA()
+        {
+            return this.A;
+        }
+        public double getB()
+        {
+            return this.B;
+        }
+        public double getC()
+        {
+            return this.C;
+        }
+
+        public void Resultado()
+        {
+
+            if (this.A > this.B)
+            {
+                this.C = this.A;
+                Console.WriteLine("O primeiro número é o maior: ") ;
+            }
+            else
+            {
+                if (this.B > this.A)
+                { 
+                    this.C = this.B;
+                    Console.WriteLine("O segundo numero e o maior: ");
+                }
+                else
+                {
+                    if (this.A == this.B)
+                    {
+                        this.C = this.A; this.C = this.B;
+                        Console.WriteLine("Ambos os numeros sao iguais");
+                    }
+                    
+                }
+            }
+            
+           
+        } 
+    }
+}
+
+
+Program:
+
+namespace exercicio_2_Atividade_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto maior = new Projeto();
+            Console.WriteLine("Digite o primeiro numero");
+            maior.setA(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite o segundo numero");
+            maior.setB(double.Parse(Console.ReadLine()));
+            maior.Resultado();
+
+            Console.WriteLine("{0}", maior.getC());
+        }
+    }
+}
+
+
+Exercício 9:
+
+Class:
+
+namespace Exercicio_2_Atividade_9
+{
+    internal class Projeto
+    {
+        private double L1;
+        private double L2;
+        private double A;
+
+        public Projeto()
+        {
+            this.A = 0;
+            this.L1 = 0;
+            this.L2 = 0;
+        }
+        public Projeto(double A, double L1, double L2)
+        {
+            this.A = A;
+            this.L1 = L1;
+            this.L2 = L2;
+        }
+
+        public void setA(double A)
+        {
+            this.A = A;
+        }
+        public void setL2(double L2)
+        {
+            this.L2 = L2;
+        }
+        public void setL1(double L1)
+        {
+            this.L1 = L1;
+        }
+
+        public double getL1()
+        {
+            return this.L1;
+        }
+        public double getL2()
+        {
+            return this.L2;
+        }
+        public double getA()
+        {
+            return this.A;
+        }
+        
+        public void Terreno()
+        {
+            this.A = this.L1 * this.L2;
+
+            if (A > 100)
+            {
+                Console.WriteLine("O terreno é grande: {0}", getA());
+            }
+            else
+            {
+                Console.WriteLine("O terreno é pequeno: {0}", getA());
+            }
+        }
+
+    }
+}
+
+
+Program:
+
+namespace Exercicio_2_Atividade_9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto terr = new Projeto();
+            Console.WriteLine("Digite a medida de um dos lados do terreno");
+            terr.setL1(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a medida do outro lado do terreno");
+            terr.setL2(double.Parse(Console.ReadLine()));
+            terr.Terreno();
+
+            Console.WriteLine("{0}", terr.getA());
+
+        }
+    }
+}
+
+Exercício 10: 
+
+Class: 
+
+namespace Exercicio_2_Atividade_10
+{
+    internal class Projeto
+    {
+        private double A;
+        private double P;
+        private double imc;
+
+        public Projeto()
+        {
+            this.A = 0;
+            this.P = 0;
+            this.imc = 0;
+        }
+
+        public Projeto(double A, double P, double imc)
+        {
+            this.A = A;
+            this.P = P;
+            this.imc = imc;
+        }
+
+        public void setA(double A)
+        {
+            this.A = A;
+        }
+        public void setP(double P)
+        {
+            this.P = P;
+        }
+        public void setimc(double imc)
+        {
+            this.imc = imc;
+        }
+
+        public double getA()
+        {
+            return this.A;
+        }
+        public double getP()
+        {
+            return this.P;
+        }
+        public double getimc()
+        {
+            return this.imc;
+        }
+
+        public void Resultado()
+        {
+            this.imc = this.P / (this.A*this.A);
+
+            if (this.imc < 20)
+            {
+                Console.WriteLine("Abaixo do peso");
+            }
+            else
+            {
+                if(20<=this.imc && this.imc<25)
+                {
+                    Console.WriteLine("Peso ideal");
+                }
+                else
+                {
+                    Console.WriteLine("Acima do peso");
+                }
+            }
+        }
+    }
+}
+
+Program: 
+
+namespace Exercicio_2_Atividade_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Projeto imc = new Projeto();
+            Console.WriteLine("Digite Peso");
+            imc.setP(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite a Altura");
+            imc.setA(double.Parse(Console.ReadLine()));
+            imc.Resultado();
+
+            Console.WriteLine("{0}", imc.getimc());
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+Exercício 13: 
+
+Class:
+
+namespace Atividade_13_Ex_1
+{
+    internal class Trianguloret
+    {
+        private double A;
+        private double B;
+        private double C;
+       
+        public Trianguloret()
+        {
+            this.A = 0;
+            this.B = 0;
+            this.C = 0;
+        }
+
+        public Trianguloret(double A, double B, double C)
+        {
+            this.A = A;
+            this.B = B;
+            this.C = C;
+        }
+
+
+        public void setladoA(double A)
+        {
+            this.A = A;
+        }
+        public void setladoB(double B)
+        {
+            this.B = B;
+        }
+        public void setladoC(double C)
+        {
+            this.C = C;
+        }
+
+        public double getladoA()
+        {
+            return this.A;
+        }
+        public double getladoB()
+        {
+            return this.B;
+        }
+        public double getladoC()
+        {
+            return this.C;
+        }
+       
+
+        public bool triangulo()
+        {
+            return (this.A * this.A == this.B * this.B + this.C * this.C ||
+                  this.B * this.B == this.C * this.C + this.A * this.A ||
+                  this.C * this.C == this.A * this.A + this.B * this.B);
+
+                
+            
+        }
+
+    }
+}
+
+Program 13: 
+
+namespace Atividade_13_Ex_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Trianguloret trr;
+            trr = new Trianguloret();
+            Console.WriteLine("Digite lado A");
+            trr.setladoA(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite lado B");
+            trr.setladoB(double.Parse(Console.ReadLine()));
+            Console.WriteLine("Digite lado C");
+            trr.setladoC(double.Parse(Console.ReadLine()));
+
+            if (trr.triangulo())
+                Console.WriteLine("é triangulo retangulo");
+            else
+                Console.WriteLine("não é triangulo retangulo");
+
+            Console.WriteLine(trr.triangulo() ? "é triangulo retangulo" : "não é triangulo retangulo");
+
+
+        }
+    }
+}
